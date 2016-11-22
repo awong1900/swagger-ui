@@ -42,12 +42,13 @@
 
     <script type="text/javascript">
         $(function () {
-            var url = window.location.search.match(/url=([^&]+)/);
-            if (url && url.length > 1) {
-                url = decodeURIComponent(url[1]);
-            } else {
-                url = window.location.toString().replace(/\/*#?.*/, '/swagger.json');
-            }
+            // var url = window.location.search.match(/url=([^&]+)/);
+            // if (url && url.length > 1) {
+            //     url = decodeURIComponent(url[1]);
+            // } else {
+            //     url = window.location.toString().replace(/\/*#?.*/, '/swagger.json');
+            // }
+            url = "https://raw.githubusercontent.com/awong1900/wio_api_v2/master/swagger/wio_v2.json"
 
             window.swaggerUi = new SwaggerUi({
                 url: url,
